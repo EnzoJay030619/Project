@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  font-family: 'Nobile';
+}
+
+*, *:before, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 2em;
+  height: 50vh;
+}
+
+.container:first-child {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 30% auto;
+      grid-template-rows: 10% 30% auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin-top: 2em;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: .9em;
+  color: red;
+}
+
+.container p {
+  line-height: 1.5em;
+  color: red;
+}
+
+.container .line {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  width: 50%;
+  border-right: 1px solid white;
+  height: 50%;
+  margin-bottom: 4m;
+  position: relative;
+}
+
+.container .line::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  border-width: 11px 11px 0 11px;
+  right: -0.80em;
+  bottom: -8px;
+}
+
+h2 {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+  font-weight: normal;
+}
+
+.subtext {
+  margin-top: 0;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.tech, .advantages {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.tech {
+  top: 0%;
+}
+
+.advantages {
+  top: 16%;
+}
+
+@media only screen and (min-width: 665px) {
+  .tech {
+    top: -25%;
+  }
+  .advantages {
+    top: -5%;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .tech {
+    top: -60%;
+  }
+  .advantages {
+    top: -30%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .tech {
+    top: -60%;
+  }
+  .advantages {
+    top: -40%;
+  }
+}
+/*# sourceMappingURL=blog.css.map */

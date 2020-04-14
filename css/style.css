@@ -1,0 +1,90 @@
+body{
+	margin: 0;
+	background:coral;
+	font-family: 'Work Sans', sans-serif;
+	font font-weight: 300;
+}
+.container{
+	width: 80%
+	margin 0 auto;
+}
+header{
+	background-color: white; 
+}
+header::after{
+	content:'';
+	display: table;
+	clear: both;
+}
+.logo{
+	float: left;
+	padding:10px 0;
+}
+nav{
+	float: right;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li{
+	display:inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+	position: relative;
+	
+}
+nav a{
+	color:black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav a:hover{
+	color:orangered;
+	transition: all 0.7s ease-in;
+}
+.register{
+	display: flex;
+	justify-content: center;
+
+}
+h1 {
+margin-left: 70px;
+}
+form li {
+list-style: none;
+margin-bottom: 5px;
+}
+
+form ul li label{
+float: left;
+clear: left;
+width: 100px;
+text-align: right;
+margin-right: 10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+
+form ul li input, select, span {
+float: left;
+margin-bottom: 10px;
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+}
+
+[type="submit"] {
+clear: left;
+margin: 20px 0 0 230px;
+font-size:18px
+}
+
+p {
+margin-left: 70px;
+font-weight: bold;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	
+nav{
+width: 100%;
+position: fixed;
+transition: .5s;
+background-color:transparent;
+transition: 1s;
+}
+nav.black{
+	background:rgb(151, 161, 154);
+}
+nav > img{
+	margin-top: 20px;
+	margin-left: 20px;
+	display: block;
+	float: left;
+}
+nav > ul{
+	margin-left: 200px;
+	padding: 30px;
+}
+nav ul li{
+	display: block;
+	float: left;
+	padding-right: 20px;
+}
+
+nav ul a {
+	background-color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+nav ul a:hover{
+	color: grey;
+	
+	transition: 0.4s
+}
+	</style>
+	
+	<title>Join Us Now</title>
+	<link rel="stylesheet" type="text/css" href="css/design.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$(window).on('scroll',function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('black');
+			}else{
+				$('nav').removeClass('black');
+			}
+		})
+
+	</script>
+	  <script defer src="js/form.js"></script>
+</head>
+<body>
+	<header>
+	<nav>
+		<img src="images/Logo.jpg" alt="">
+		<ul>
+		<a href="technology.html"><li>Home</li></a>
+		<a href="#"><li>Mission</li></a>
+		<a href="#"><li>Department</li></a>	
+		<a href="#"><li>Register</li></a>
+		<a href="sprite.html"><li>Come lets play</li></a>
+		<a href=""><li class="fab fa-youtube"></li></a>
+	</ul>
+	</nav>
+</header>
+	<div class=container>
+			<div class="register">
+				<h3><span>Do you want to be part of our team?</span><br>Join now as we make an better movement to better future</h3>
+				<span>*Required</span>
+			</div>
+				<h2>Registration Form</h2>
+			<div id="error"></div>
+			<form id="form" name='register' onsubmit="return formValidation()" class="register">
+    	
+    	<ul>
+    
+    		<li><label>Full Name</label></li>
+    		<li><input id="name" type="text" name="name" required></li>
+
+    		<li><label>Age</label></li>
+    		<li><input id="age" type="text" name="age" required></li>
+
+    		<li><label>Address</label></li>
+    		<li><input id="address" type="text" name="address" required></li>
+
+			<li><label>Birthdate</label></li>
+    		<li><input id="birthdate" type="text" name="birthdate"required ></li>
+ 
+    		<li><label>E-mail</label></li>
+    		<li><input id="email" type="email" name="mail" required></li>
+
+
+    		<li><label>Contact Number</label></li>
+    		<li><input id="number" type="text" name="number" required></li>
+
+    		<li><label></span>Country</label></li>
+    		<li><select id="country" name="country" required>
+	        	<option value="" disabled selected>Please select</option>
+				<option label="Singapore">Singapore</option>
+				<option label="Malaysia">Malaysia</option>
+				<option label="Thailand">Thailand</option>
+				<option label="Philippines">Philippines</option>	
+				</select>		
+	        </li>
+
+    		<li><label for="more">Description</label></li>
+			<li><textarea></textarea></li>
+
+    		<li><button type="submit">Submit</button></li>
+    	</ul>
+    </form>
+			</div>
+		</div>
+
+		<div class="footer">
+	      <div class="inner_footer">
+	      		<div class="logo_container">
+	      			<img src="images/1.jpg">
+	   			</div>
+	   			<div class="footer_third">
+	   				<h1>Need Help?</h1>
+	   				<a href="">Terms &amp; conditions</a>
+	   				<a href="">Privacy Policy</a>
+	   				<a href="">Locations</a>
+	   			</div>
+
+	   			<div class="footer_third">
+	   				<h1>More</h1>
+	   				<a href="">Brouchers</a>
+	   				<a href="">Donate</a>
+	   				<a href="">Governance</a>
+	   			</div>
+
+	   			<div class="footer_third">
+	   				<h1>Follow Us</h1>
+	   				<li><a href="#"><i class='fab fa-facebook-f' style="color: black"></i></a></li>
+	   				<li><a href="#"><i class='fab fa-google-plus-g'style="color: black"></i></a></li>
+	   				<li><a href="#"><i class='fab fa-twitter'style="color: black"></i></a></li>
+	   				<li><a href="#"><i class='fab fa-instagram'style="color: black"></i></a></li>
+	   				<span>
+	   					南方大学学院 - Southern University College<br>
+	   					Jalan Selatan Utama, Skudai<br>
+	   					81300 Skudai, Johor, Malaysia<br>
+	   				</span>
+	   			</div>
+
+	   		</div>
+	   	</div>
+</body>
+</html>

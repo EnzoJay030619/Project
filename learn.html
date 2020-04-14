@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Tech changing the world
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: arial, "Times New Roman";
+	min-height: 100%;
+}
+		nav{
+	position: fixed;
+	width: 100%;
+	transition: .5s;
+	background-color:transparent;
+	transition: 1s;
+}
+nav.black{
+	background:rgb(151, 161, 154);
+}
+nav > img{
+	margin-top: 20px;
+	margin-left: 20px;
+	display: block;
+	float: left;
+}
+nav > ul{
+	margin-left: 200px;
+	padding: 30px;
+}
+nav ul li{
+	display: block;
+	float: left;
+	padding-right: 20px;
+}
+
+nav ul a {
+	background-color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+nav ul a:hover{
+	color: grey;
+	
+	transition: 0.4s
+}
+.footer{
+	margin-top: 5%;
+	width: 100vw;
+	display: block;
+	overflow: hidden;
+	padding: 70px 0;
+	box-sizing: border-box;
+	background-color: darkturquoise;
+}
+.inner_footer{
+	display: inline-block;
+	margin: 0 auto;
+	width: 1100px;
+	height: 50%;
+}
+.inner_footer .logo_container{
+	width: 35%;
+	float: left;
+	height: 100%;
+	display: block;
+}
+.inner_footer .logo_container img{
+	width: 80%;
+	height: auto;
+	}
+.inner_footer .footer_third{
+	width:calc(21.6666666667% - 20px);
+	margin-right: 10px;
+	float:left;
+	height: 100%;
+}
+.inner_footer .footer_third:last-child{
+	margin-right: 0;
+}
+.inner_footer .footer_third h1{
+	font-family: 'Arial'
+	font-size:22px;
+	color: white;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.inner_footer .footer_third a{
+	font-family: 'Arial'
+	font-size:22px;
+	color: white;
+	font-weight: 200;
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.inner_footer .footer_third li{
+	display: inline-block;
+	padding: 0 5px;
+	font-size: 20px;
+}
+.inner_footer .footer_third span{
+	color:white;
+	font-family: 'Arial';
+	font-size: 16px;
+	font-weight: 200;
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+}
+@media(max-width: 600px){
+	.footer .inner_footer{
+		width: 90%;
+	}
+	.inner_footer .logo_container,
+	.inner_footer .footer_third{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+	</style>
+	<script type="text/javascript">
+		$(window).on('scroll',function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('black');
+			}else{
+				$('nav').removeClass('black');
+			}
+		})
+
+	</script>
+	<link rel="stylesheet"  href="css/blog.css">
+</head>
+<body>
+	<header>
+	<nav>
+		<img src="images/Logo.jpg" alt="">
+		<ul>
+		<a href="technology.html"><li>Home</li></a>
+		<a href="#"><li>Mission</li></a>
+		<a href="#"><li>Department</li></a>	
+		<a href="#"><li>Register</li></a>
+		<a href="#"><li>Support</li></a>
+		<a href=""><li class="fab fa-youtube"></li></a>
+	</ul>
+	</nav>
+	</header><br>
+
+	<div class="container">
+	<h1  class="lax" data-lax-translate-y="0 0, 400 -400">Technology</h1>
+	<div cclass="line lax" data-lax-opacity="0 1, 100 0"></div>
+
+</div>
+	<div class="container secondry lax"class="container secondary lax" data-lax-translate-y="0 0, 400 -600" >
+		<h2>Strategic</h2>
+		<p class="subtext">Advatanges</p>
+		<p>The World Wide Web, abbreviated as www has made the world a social village. This is because information from all around the globe is widely available on the internet. While most of the news you get to see on social media is purely factual, one may also see image results for particular news. Not only more news is available, but all such information is also straightforward to access. All thanks to modern technology.
+		One can get to read a book in the comfort of their bed and a cup of coffee. EBooks are available on the internet for this purpose. The modern technology has replaced radios with televisions, and now even televisions have been digitised to “LCD’s” and “LED’s”. Efforts are underway to create more reliable sources of information. All this is possible</p>
+	</div>
+
+	<img src="images/techs.jpg" alt="Technology" class="tech">
+	<img src="images/advatages.jpg" alt="Technology" class="advantages">
+
+	<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+	<script>
+		 window.onload = function() {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+	</script>
+<div class="footer">
+	<div class="inner_footer">
+			<div class="logo_container">
+				<img src="images/Logo.jpg">
+			 </div>
+			 <div class="footer_third">
+				 <h1>Need Help?</h1>
+				 <a href="">Terms &amp; conditions</a>
+				 <a href="">Privacy Policy</a>
+				 <a href="">Locations</a>
+			 </div>
+
+			 <div class="footer_third">
+				 <h1>More</h1>
+				 <a href="">Brouchers</a>
+				 <a href="">Donate</a>
+				 <a href="">Governance</a>
+			 </div>
+
+			 <div class="footer_third">
+				 <h1>Follow Us</h1>
+				 <li><a href="#"><i class='fab fa-facebook-f' style="color: black"></i></a></li>
+				 <li><a href="#"><i class='fab fa-google-plus-g'style="color: black"></i></a></li>
+				 <li><a href="#"><i class='fab fa-twitter'style="color: black"></i></a></li>
+				 <li><a href="#"><i class='fab fa-instagram'style="color: black"></i></a></li>
+				 <span>
+					 南方大学学院 - Southern University College<br>
+					 Jalan Selatan Utama, Skudai<br>
+					 81300 Skudai, Johor, Malaysia<br>
+				 </span>
+			 </div>
+
+		 </div>
+	 </div>
+
+</body>
+</html>
